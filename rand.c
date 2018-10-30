@@ -6,7 +6,7 @@
 #include<fcntl.h>
 
 int myrand() {
-  int randD = open("/dev/urandom", O_RDONLY);
+  int randD = open("/dev/random", O_RDONLY);
   if(randD < 0)
     return 0;
   else {

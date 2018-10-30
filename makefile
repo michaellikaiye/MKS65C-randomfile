@@ -1,7 +1,7 @@
-all: rando.o
-	gcc -o hello rando.o
+all: rand.o
+	gcc -o hello rand.o
 
-rando.o: rand.c
+rand.o: rand.c
 	gcc -c rand.c
 
 run:

@@ -28,7 +28,7 @@ int main() {
   }
 
   printf("\nWriting numbers to file...\n");
-  int file = open("l.txt", O_WRONLY | O_CREAT);
+  int file = open("l.txt", O_WRONLY);
   int result = write(file, myData, sizeof myData);
   int c = close(file);
 
